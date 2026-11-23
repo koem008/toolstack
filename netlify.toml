@@ -1,0 +1,13 @@
+# Netlify — konfigurace nasazení
+# Při každém buildu se ze content/data.json přegenerují SEO soubory
+# (sitemap, stránky nástrojů, llms.txt) i offline záloha data.js.
+
+[build]
+  publish = "."
+  command = "python3 gen_seo.py && python3 gen_datajs.py"
+
+# Obsah se nesmí cachovat (aby se změny z /admin projevily hned)
+[[headers]]
+  for = "/content/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

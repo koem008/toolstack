@@ -1,0 +1,5 @@
+# lokální dev server
+serve.py
+
+# lokální cache / profily
+.chrome-profile*

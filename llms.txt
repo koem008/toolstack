@@ -1,0 +1,112 @@
+# TOOLSTACK
+
+> kurátorský výběr nástrojů. Sedmdesát nástrojů. Jedna kolekce. Nic navíc.
+
+Nástroje. *Vybráno s rozmyslem.*
+
+## Kategorie a nástroje
+
+### Chatboti & Asistenti
+- [Jasper](https://tvujweb.cz/nastroje/jasper.html) — AI platforma pro psaní marketingových textů, článků a brand copy pro týmy.
+- [Copy.ai](https://tvujweb.cz/nastroje/copy-ai.html) — Nástroj pro rychlou tvorbu marketingového obsahu, e-mailů a popisků pomocí AI.
+- [Writesonic](https://tvujweb.cz/nastroje/writesonic.html) — AI pro psaní článků, reklam a SEO obsahu v desítkách jazyků.
+- [Rytr](https://tvujweb.cz/nastroje/rytr.html) — Rychlý AI copywriter pro e-maily, popisky produktů a kratší texty.
+- [Anyword](https://tvujweb.cz/nastroje/anyword.html) — Copywriting AI, který předpovídá výkon textu a optimalizuje ho na konverze.
+- [Notion AI](https://tvujweb.cz/nastroje/notion-ai.html) — AI asistent uvnitř Notionu pro psaní, poznámky a organizaci práce.
+- [Monica](https://tvujweb.cz/nastroje/monica.html) — AI asistent v prohlížeči pro psaní, překlady a shrnutí na jakékoli stránce.
+
+### AI Video
+- [Synthesia](https://tvujweb.cz/nastroje/synthesia.html) — Tvorba videí s realistickými AI avatary z pouhého textu.
+- [Descript](https://tvujweb.cz/nastroje/descript.html) — Editor videa a audia, který se ovládá stejně jako textový dokument.
+- [Opus Clip](https://tvujweb.cz/nastroje/opus-clip.html) — Automaticky stříhá dlouhá videa na krátké virální klipy.
+- [InVideo](https://tvujweb.cz/nastroje/invideo.html) — Platforma pro tvorbu videí z textu se šablonami a stock záběry.
+- [HeyGen](https://tvujweb.cz/nastroje/heygen.html) — Generování videí s AI avatary a klonováním hlasu.
+- [Fliki](https://tvujweb.cz/nastroje/fliki.html) — Převod textu na video s hlasovým komentářem (TTS).
+
+### AI Audio & Hlas
+- [ElevenLabs](https://tvujweb.cz/nastroje/elevenlabs.html) — Nejrealističtější AI hlasy pro voiceover, dabing a audioknihy.
+- [Murf](https://tvujweb.cz/nastroje/murf.html) — Studio pro tvorbu profesionálních voiceoverů z textu.
+- [Speechify](https://tvujweb.cz/nastroje/speechify.html) — Převádí text na mluvené slovo — čte dokumenty, PDF i webové stránky.
+- [Lovo](https://tvujweb.cz/nastroje/lovo.html) — AI generátor hlasů a klonování hlasu pro video a reklamu.
+- [Listnr](https://tvujweb.cz/nastroje/listnr.html) — Tvorba podcastů a voiceoverů s realistickými AI hlasy.
+
+### AI Psaní & SEO
+- [SurferSEO](https://tvujweb.cz/nastroje/surferseo.html) — Optimalizace obsahu pro vyhledávače — radí, co přesně do článku napsat.
+- [Frase](https://tvujweb.cz/nastroje/frase.html) — AI pro výzkum témat, tvorbu a optimalizaci SEO obsahu.
+- [Scalenut](https://tvujweb.cz/nastroje/scalenut.html) — SEO platforma pro plánování a psaní obsahu, který se umísťuje ve vyhledávání.
+- [NeuronWriter](https://tvujweb.cz/nastroje/neuronwriter.html) — Editor, který pomáhá psát SEO optimalizované články podle konkurence.
+- [Koala](https://tvujweb.cz/nastroje/koala.html) — Generátor AI článků s reálnými daty a SEO optimalizací.
+
+### AI Obrázky
+- [Fotor](https://tvujweb.cz/nastroje/fotor.html) — Online editor fotek a grafiky s AI generátorem obrázků.
+- [NightCafe](https://tvujweb.cz/nastroje/nightcafe.html) — Generátor AI umění a obrázků z textu v mnoha výtvarných stylech.
+- [Playground](https://tvujweb.cz/nastroje/playground.html) — Grafický editor s AI pro tvorbu log, plakátů a grafiky.
+
+### Grafika & Design
+- [Canva](https://tvujweb.cz/nastroje/canva.html) — Nejpopulárnější nástroj pro grafiku — šablony, prezentace i příspěvky na sítě.
+- [Adobe CC](https://tvujweb.cz/nastroje/adobe-cc.html) — Profesionální balík pro grafiku, foto a video — Photoshop, Illustrator a další.
+- [Figma](https://tvujweb.cz/nastroje/figma.html) — Kolaborativní nástroj pro návrh UI/UX rozhraní a prototypů.
+- [Kittl](https://tvujweb.cz/nastroje/kittl.html) — Návrhový nástroj pro tvorbu grafiky, log a merchandise.
+- [VistaCreate](https://tvujweb.cz/nastroje/vistacreate.html) — Grafický editor se šablonami pro sociální sítě a marketing.
+- [CorelDRAW](https://tvujweb.cz/nastroje/coreldraw.html) — Profesionální vektorový editor pro ilustrace a grafický design.
+
+### Stock média
+- [Envato](https://tvujweb.cz/nastroje/envato.html) — Tržiště šablon, stock fotek, videí, hudby a WordPress motivů.
+- [Shutterstock](https://tvujweb.cz/nastroje/shutterstock.html) — Obrovská knihovna stock fotek, vektorů, videí a hudby.
+- [Depositphotos](https://tvujweb.cz/nastroje/depositphotos.html) — Stock fotografie, vektory a videa za výhodné ceny.
+- [Creative Market](https://tvujweb.cz/nastroje/creative-market.html) — Tržiště designu — fonty, šablony, grafika a assety od tvůrců.
+- [Motion Array](https://tvujweb.cz/nastroje/motion-array.html) — Šablony pro video, hudba a efekty pro střihače.
+
+### Video editory
+- [Filmora](https://tvujweb.cz/nastroje/filmora.html) — Video editor s efekty a AI nástroji pro začátečníky i pokročilé.
+- [Movavi](https://tvujweb.cz/nastroje/movavi.html) — Snadný editor videa a převaděč formátů pro Windows a Mac.
+- [CapCut](https://tvujweb.cz/nastroje/capcut.html) — Oblíbený editor videa pro mobil i desktop, zdarma.
+
+### Hosting
+- [Hostinger](https://tvujweb.cz/nastroje/hostinger.html) — Cenově dostupný webhosting s rychlými servery a AI podporou.
+- [SiteGround](https://tvujweb.cz/nastroje/siteground.html) — Spolehlivý hosting s vynikající podporou, ideální pro WordPress.
+- [Bluehost](https://tvujweb.cz/nastroje/bluehost.html) — Hosting doporučený WordPressem, dobrý pro začátečníky.
+- [Kinsta](https://tvujweb.cz/nastroje/kinsta.html) — Prémiový spravovaný WordPress hosting na Google Cloud.
+- [WP Engine](https://tvujweb.cz/nastroje/wp-engine.html) — Managed WordPress hosting pro firmy a náročné weby.
+- [Cloudways](https://tvujweb.cz/nastroje/cloudways.html) — Spravovaný cloud hosting (DigitalOcean, AWS, Google Cloud) s jednoduchým ovládáním.
+
+### Tvorba webů
+- [Wix](https://tvujweb.cz/nastroje/wix.html) — Tvůrce webů drag-and-drop pro weby a e-shopy bez kódu.
+- [Squarespace](https://tvujweb.cz/nastroje/squarespace.html) — Elegantní šablony pro weby, portfolia a e-shopy.
+- [Webflow](https://tvujweb.cz/nastroje/webflow.html) — No-code platforma pro profesionální a responzivní weby.
+- [Elementor](https://tvujweb.cz/nastroje/elementor.html) — Nejoblíbenější vizuální builder pro WordPress.
+- [Divi](https://tvujweb.cz/nastroje/divi.html) — WordPress téma s vizuálním builderem pro weby bez kódu.
+- [Framer](https://tvujweb.cz/nastroje/framer.html) — Moderní nástroj pro interaktivní weby s animacemi.
+
+### E-commerce
+- [Shopify](https://tvujweb.cz/nastroje/shopify.html) — Nejrozšířenější platforma pro založení a provoz e-shopu.
+- [BigCommerce](https://tvujweb.cz/nastroje/bigcommerce.html) — E-commerce platforma pro větší a rychle rostoucí obchody.
+- [ThriveCart](https://tvujweb.cz/nastroje/thrivecart.html) — Platforma pro prodejní stránky, checkout a upselling.
+- [SamCart](https://tvujweb.cz/nastroje/samcart.html) — Nástroj pro tvorbu prodejních stránek a optimalizaci konverzí.
+- [Gumroad](https://tvujweb.cz/nastroje/gumroad.html) — Jednoduchý prodej digitálních produktů, kurzů a členství.
+
+### SEO & Marketing
+- [SEMrush](https://tvujweb.cz/nastroje/semrush.html) — Kompletní SEO a marketingová sada — klíčová slova, konkurence, PPC.
+- [SE Ranking](https://tvujweb.cz/nastroje/se-ranking.html) — SEO platforma pro sledování pozic, audity webu a klíčová slova.
+- [Mangools](https://tvujweb.cz/nastroje/mangools.html) — Sada SEO nástrojů (KWFinder, SERPChecker) pro výzkum klíčových slov.
+- [RankMath](https://tvujweb.cz/nastroje/rankmath.html) — SEO plugin pro WordPress, který pomáhá optimalizovat články.
+
+### VPN & Zabezpečení
+- [NordVPN](https://tvujweb.cz/nastroje/nordvpn.html) — Nejpopulárnější VPN pro bezpečné a anonymní prohlížení internetu.
+- [Surfshark](https://tvujweb.cz/nastroje/surfshark.html) — VPN s neomezeným počtem zařízení a extra bezpečnostními funkcemi.
+- [ExpressVPN](https://tvujweb.cz/nastroje/expressvpn.html) — Prémiová VPN známá rychlostí a spolehlivostí.
+- [ProtonVPN](https://tvujweb.cz/nastroje/protonvpn.html) — VPN od Protonu s důrazem na soukromí a open-source.
+
+### Kurzy & LMS
+- [Teachable](https://tvujweb.cz/nastroje/teachable.html) — Platforma pro tvorbu a prodej vlastních online kurzů.
+- [Thinkific](https://tvujweb.cz/nastroje/thinkific.html) — Nástroj pro tvorbu kurzů, členství a komunit.
+- [Kajabi](https://tvujweb.cz/nastroje/kajabi.html) — All-in-one pro tvůrce — kurzy, e-mail marketing, weby a prodej.
+- [Podia](https://tvujweb.cz/nastroje/podia.html) — Jednoduchá platforma pro kurzy, digitální produkty a členství.
+- [Domestika](https://tvujweb.cz/nastroje/domestika.html) — Kreativní online kurzy od profesionálů — design, foto, ilustrace.
+
+## Klíčové stránky
+
+- [Domů](https://tvujweb.cz/)
+- [Všechny nástroje](https://tvujweb.cz/nastroje.html)
+- [Časté dotazy](https://tvujweb.cz/faq.html)
+- [Kontakt](https://tvujweb.cz/kontakt.html)

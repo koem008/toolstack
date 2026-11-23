@@ -1,0 +1,54 @@
+# Decap CMS — konfigurace editoru obsahu
+# Dokumentace: https://decapcms.org/docs/
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Obrázky (nepoužíváme, ale pro jistotu)
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "content"
+    label: "Obsah webu"
+    editor:
+      preview: false
+    files:
+      - name: "data"
+        label: "Texty, kategorie a nástroje"
+        file: "content/data.json"
+        format: "json"
+        fields:
+          - label: "Texty webu"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Název webu", name: "name", widget: "string" }
+              - { label: "Podtitulek", name: "tagline", widget: "string" }
+              - { label: "Intro – nadtitulek", name: "introEyebrow", widget: "string" }
+              - { label: "Intro – titulek", name: "introTitle", widget: "string", hint: "Pro nový řádek napiš \\n" }
+              - { label: "Intro – text", name: "introSub", widget: "text" }
+              - { label: "Závěr – nadtitulek", name: "outroEyebrow", widget: "string" }
+              - { label: "Závěr – titulek", name: "outroTitle", widget: "string" }
+              - label: "Kroky"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - { label: "Nadpis", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+              - { label: "Poznámka (závěr)", name: "outroNote", widget: "text" }
+          - label: "Kategorie a nástroje"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Kód (2–3 znaky)", name: "code", widget: "string" }
+              - { label: "Název kategorie", name: "name", widget: "string" }
+              - label: "Nástroje"
+                name: "tools"
+                widget: "list"
+                fields:
+                  - { label: "Název nástroje", name: "name", widget: "string" }
+                  - { label: "Krátký popis (karta)", name: "desc", widget: "text" }
+                  - { label: "Kompletní popis (detail)", name: "longdesc", widget: "text" }
+                  - { label: "Odkaz (affiliate link)", name: "url", widget: "string" }

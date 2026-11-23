@@ -1,0 +1,541 @@
+/* ============================================================
+   OFFLINE ZÁLOHA OBSAHU (generováno z content/data.json).
+   Hlavní obsah je v content/data.json — edituje se přes /admin.
+   Tenhle soubor se používá jen při otevření přes file://.
+   ============================================================ */
+
+const SITE = {
+  "name": "TOOLSTACK",
+  "tagline": "kurátorský výběr nástrojů",
+  "introEyebrow": "KURÁTOR VÝBĚRU — 070 NÁSTROJŮ",
+  "introTitle": "Nástroje.\n*Vybráno s rozmyslem.*",
+  "introSub": "Sedmdesát nástrojů. Jedna kolekce. Nic navíc.",
+  "outroEyebrow": "CO DÁL",
+  "outroTitle": "Našel jsi, cos hledal?",
+  "steps": [
+    {
+      "title": "Procházej",
+      "text": "Projdi kolekci a objev nástroje, které jsi neznal."
+    },
+    {
+      "title": "Vyber",
+      "text": "Porovnej a vyber ten, který ti sedne."
+    },
+    {
+      "title": "Vyzkoušej",
+      "text": "Otevři nástroj a začni."
+    }
+  ],
+  "outroNote": "Kolekci průběžně rozšiřujeme."
+};
+
+const CATEGORIES = [
+  {
+    "code": "AI",
+    "name": "Chatboti & Asistenti",
+    "tools": [
+      {
+        "name": "Jasper",
+        "desc": "AI platforma pro psaní marketingových textů, článků a brand copy pro týmy.",
+        "longdesc": "Jasper je AI platforma pro psaní marketingových textů. Umí tvořit reklamy, e-maily, články i brand copy podle tónu vaší značky. Hodí se pro marketingové týmy, které chtějí rychleji a konzistentněji produkovat obsah.",
+        "url": "https://www.jasper.ai"
+      },
+      {
+        "name": "Copy.ai",
+        "desc": "Nástroj pro rychlou tvorbu marketingového obsahu, e-mailů a popisků pomocí AI.",
+        "longdesc": "Copy.ai generuje marketingový obsah pomocí AI — od e-mailů a popisků po celé kampaně. Stačí zadat téma a nástroj navrhne hotové texty. Vhodné pro marketéry, freelancery a malé týmy.",
+        "url": "https://www.copy.ai"
+      },
+      {
+        "name": "Writesonic",
+        "desc": "AI pro psaní článků, reklam a SEO obsahu v desítkách jazyků.",
+        "longdesc": "Writesonic je AI pro psaní článků, reklam a SEO obsahu v desítkách jazyků. Zvládne blogy, produktové popisy i reklamní texty. Pomáhá tvořit obsah rychle a ve velkém.",
+        "url": "https://writesonic.com"
+      },
+      {
+        "name": "Rytr",
+        "desc": "Rychlý AI copywriter pro e-maily, popisky produktů a kratší texty.",
+        "longdesc": "Rytr je rychlý AI copywriter pro kratší texty — e-maily, popisky na sociální sítě, titulky a popisy produktů. Je jednoduchý a cenově dostupný. Ideální pro začátečníky a rychlé úkoly.",
+        "url": "https://rytr.me"
+      },
+      {
+        "name": "Anyword",
+        "desc": "Copywriting AI, který předpovídá výkon textu a optimalizuje ho na konverze.",
+        "longdesc": "Anyword je copywriting AI, který předpovídá výkon textu ještě před publikací. Analyzuje, jak text zabere na konkrétní publikum, a navrhuje úpravy. Hodí se pro výkonnostní marketing.",
+        "url": "https://anyword.com"
+      },
+      {
+        "name": "Notion AI",
+        "desc": "AI asistent uvnitř Notionu pro psaní, poznámky a organizaci práce.",
+        "longdesc": "Notion AI je AI asistent zabudovaný přímo v Notionu. Pomáhá psát, shrnovat poznámky, generovat nápady a organizovat práci na jednom místě. Pro týmy i jednotlivce, kteří už Notion používají.",
+        "url": "https://www.notion.so"
+      },
+      {
+        "name": "Monica",
+        "desc": "AI asistent v prohlížeči pro psaní, překlady a shrnutí na jakékoli stránce.",
+        "longdesc": "Monica je AI asistent v prohlížeči, který pracuje na jakékoli stránce. Pomáhá s psaním, překlady, shrnutími i odpověďmi na otázky. Užitečný pro každodenní práci na webu.",
+        "url": "https://monica.im"
+      }
+    ]
+  },
+  {
+    "code": "VID",
+    "name": "AI Video",
+    "tools": [
+      {
+        "name": "Synthesia",
+        "desc": "Tvorba videí s realistickými AI avatary z pouhého textu.",
+        "longdesc": "Synthesia vytváří videa s realistickými AI avatary, kteří mluví váš text. Nemusíte natáčet ani používat kameru. Ideální pro firemní školení, prezentace a marketingová videa.",
+        "url": "https://www.synthesia.io"
+      },
+      {
+        "name": "Descript",
+        "desc": "Editor videa a audia, který se ovládá stejně jako textový dokument.",
+        "longdesc": "Descript je editor videa a audia, který se ovládá jako textový dokument. Vystřihnete slovo v přepisu a video se upraví. Skvělé pro podcasty, rozhovory a screencasty.",
+        "url": "https://www.descript.com"
+      },
+      {
+        "name": "Opus Clip",
+        "desc": "Automaticky stříhá dlouhá videa na krátké virální klipy.",
+        "longdesc": "Opus Clip automaticky stříhá dlouhá videa na krátké virální klipy. Najde nejzajímavější momenty a přidá titulky. Určeno pro tvůrce na sociální sítě.",
+        "url": "https://www.opus.pro"
+      },
+      {
+        "name": "InVideo",
+        "desc": "Platforma pro tvorbu videí z textu se šablonami a stock záběry.",
+        "longdesc": "InVideo je platforma pro tvorbu videí z textu se šablonami a stock záběry. Bez střihových znalostí vytvoříte promo, reklamu nebo video na sítě. Pro marketéry a tvůrce obsahu.",
+        "url": "https://invideo.io"
+      },
+      {
+        "name": "HeyGen",
+        "desc": "Generování videí s AI avatary a klonováním hlasu.",
+        "longdesc": "HeyGen generuje videa s AI avatary a klonováním hlasu. Avatar řekne váš scénář v mnoha jazycích. Vhodné pro lokalizaci videí a firemní komunikaci.",
+        "url": "https://www.heygen.com"
+      },
+      {
+        "name": "Fliki",
+        "desc": "Převod textu na video s hlasovým komentářem (TTS).",
+        "longdesc": "Fliki převádí text na video s hlasovým komentářem (TTS). Z článku nebo scénáře vytvoří video s hlasem. Užitečné pro rychlou tvorbu obsahu na YouTube a sociální sítě.",
+        "url": "https://fliki.ai"
+      }
+    ]
+  },
+  {
+    "code": "AUD",
+    "name": "AI Audio & Hlas",
+    "tools": [
+      {
+        "name": "ElevenLabs",
+        "desc": "Nejrealističtější AI hlasy pro voiceover, dabing a audioknihy.",
+        "longdesc": "ElevenLabs nabízí nejrealističtější AI hlasy pro voiceover, dabing a audioknihy. Umí i klonovat hlas a mluvit v mnoha jazycích. Špička v oblasti syntézy řeči.",
+        "url": "https://elevenlabs.io"
+      },
+      {
+        "name": "Murf",
+        "desc": "Studio pro tvorbu profesionálních voiceoverů z textu.",
+        "longdesc": "Murf je studio pro tvorbu profesionálních voiceoverů z textu. Nabízí desítky realistických hlasů a jednoduché úpravy. Vhodné pro videa, prezentace a e-learning.",
+        "url": "https://murf.ai"
+      },
+      {
+        "name": "Speechify",
+        "desc": "Převádí text na mluvené slovo — čte dokumenty, PDF i webové stránky.",
+        "longdesc": "Speechify převádí text na mluvené slovo — čte dokumenty, PDF, e-maily i webové stránky. Pomáhá rychleji číst a lépe se soustředit. Pro studenty i profesionály.",
+        "url": "https://speechify.com"
+      },
+      {
+        "name": "Lovo",
+        "desc": "AI generátor hlasů a klonování hlasu pro video a reklamu.",
+        "longdesc": "Lovo je AI generátor hlasů a klonování hlasu pro video a reklamu. Nabízí stovky hlasů a emocí. Určeno tvůrcům obsahu a marketérům.",
+        "url": "https://lovo.ai"
+      },
+      {
+        "name": "Listnr",
+        "desc": "Tvorba podcastů a voiceoverů s realistickými AI hlasy.",
+        "longdesc": "Listnr slouží k tvorbě podcastů a voiceoverů s realistickými AI hlasy. Text převede na mluvené slovo a publikuje. Ideální pro podcastery a content marketéry.",
+        "url": "https://listnr.ai"
+      }
+    ]
+  },
+  {
+    "code": "SEO",
+    "name": "AI Psaní & SEO",
+    "tools": [
+      {
+        "name": "SurferSEO",
+        "desc": "Optimalizace obsahu pro vyhledávače — radí, co přesně do článku napsat.",
+        "longdesc": "SurferSEO optimalizuje obsah pro vyhledávače. Porovná váš článek s konkurencí a řekne, co doplnit a jak strukturovat, aby se umístil. Nástroj pro SEO specialisty.",
+        "url": "https://surferseo.com"
+      },
+      {
+        "name": "Frase",
+        "desc": "AI pro výzkum témat, tvorbu a optimalizaci SEO obsahu.",
+        "longdesc": "Frase je AI pro výzkum témat, tvorbu a optimalizaci SEO obsahu. Z výzkumu klíčových slov vytvoří strukturu článku a návrh textu. Pro content marketéry a copywritery.",
+        "url": "https://www.frase.io"
+      },
+      {
+        "name": "Scalenut",
+        "desc": "SEO platforma pro plánování a psaní obsahu, který se umísťuje ve vyhledávání.",
+        "longdesc": "Scalenut je SEO platforma pro plánování a psaní obsahu, který se umísťuje ve vyhledávání. Pokrývá celý proces od klíčových slov po publikaci. Pro týmy, které to myslí se SEO vážně.",
+        "url": "https://www.scalenut.com"
+      },
+      {
+        "name": "NeuronWriter",
+        "desc": "Editor, který pomáhá psát SEO optimalizované články podle konkurence.",
+        "longdesc": "NeuronWriter je editor, který pomáhá psát SEO optimalizované články podle konkurence. Analyzuje top výsledky a navrhuje klíčová slova a strukturu. Pro copywritery a SEO.",
+        "url": "https://neuronwriter.com"
+      },
+      {
+        "name": "Koala",
+        "desc": "Generátor AI článků s reálnými daty a SEO optimalizací.",
+        "longdesc": "Koala je generátor AI článků s reálnými daty a SEO optimalizací. Z jednoho zadání vytvoří kompletní článek včetně nadpisů a klíčových slov. Pro rychlou produkci obsahu.",
+        "url": "https://koala.sh"
+      }
+    ]
+  },
+  {
+    "code": "IMG",
+    "name": "AI Obrázky",
+    "tools": [
+      {
+        "name": "Fotor",
+        "desc": "Online editor fotek a grafiky s AI generátorem obrázků.",
+        "longdesc": "Fotor je online editor fotek a grafiky s AI generátorem obrázků. Upravíte fotky, vytvoříte grafiku a vygenerujete obrázky z textu. Vhodné pro rychlou grafiku bez instalace.",
+        "url": "https://www.fotor.com"
+      },
+      {
+        "name": "NightCafe",
+        "desc": "Generátor AI umění a obrázků z textu v mnoha výtvarných stylech.",
+        "longdesc": "NightCafe je generátor AI umění a obrázků z textu v mnoha výtvarných stylech. Z popisu vytvoří obrazy, ilustrace i abstrakce. Pro kreativce a nadšence do AI umění.",
+        "url": "https://nightcafe.studio"
+      },
+      {
+        "name": "Playground",
+        "desc": "Grafický editor s AI pro tvorbu log, plakátů a grafiky.",
+        "longdesc": "Playground je grafický editor s AI pro tvorbu log, plakátů a grafiky. Kombinuje klasickou editaci s generováním pomocí AI. Pro designéry i začátečníky.",
+        "url": "https://playground.com"
+      }
+    ]
+  },
+  {
+    "code": "GRF",
+    "name": "Grafika & Design",
+    "tools": [
+      {
+        "name": "Canva",
+        "desc": "Nejpopulárnější nástroj pro grafiku — šablony, prezentace i příspěvky na sítě.",
+        "longdesc": "Canva je nejpopulárnější nástroj pro grafiku. Nabízí tisíce šablon pro prezentace, příspěvky, letáky i videa. Zvládne ji každý — od začátečníků po profesionály.",
+        "url": "https://www.canva.com"
+      },
+      {
+        "name": "Adobe CC",
+        "desc": "Profesionální balík pro grafiku, foto a video — Photoshop, Illustrator a další.",
+        "longdesc": "Adobe Creative Cloud je profesionální balík pro grafiku, foto a video — Photoshop, Illustrator, Premiere a další. Standard pro designéry a tvůrce. Nabízí neomezené možnosti.",
+        "url": "https://www.adobe.com"
+      },
+      {
+        "name": "Figma",
+        "desc": "Kolaborativní nástroj pro návrh UI/UX rozhraní a prototypů.",
+        "longdesc": "Figma je kolaborativní nástroj pro návrh UI/UX a prototypů. Na jednom návrhu pracuje celý tým v reálném čase. Standard pro produktové designéry.",
+        "url": "https://www.figma.com"
+      },
+      {
+        "name": "Kittl",
+        "desc": "Návrhový nástroj pro tvorbu grafiky, log a merchandise.",
+        "longdesc": "Kittl je návrhový nástroj pro tvorbu grafiky, log a merchandise. Nabízí pokročilé efekty a editační možnosti. Vhodné pro tvorbu profesionálně vypadající grafiky.",
+        "url": "https://www.kittl.com"
+      },
+      {
+        "name": "VistaCreate",
+        "desc": "Grafický editor se šablonami pro sociální sítě a marketing.",
+        "longdesc": "VistaCreate je grafický editor se šablonami pro sociální sítě a marketing. Rychle vytvoříte příspěvky, stories i reklamy. Pro menší firmy a tvůrce.",
+        "url": "https://create.vista.com"
+      },
+      {
+        "name": "CorelDRAW",
+        "desc": "Profesionální vektorový editor pro ilustrace a grafický design.",
+        "longdesc": "CorelDRAW je profesionální vektorový editor pro ilustrace a grafický design. Nabízí přesné vektorové nástroje a typografii. Pro grafiky a tisk.",
+        "url": "https://www.coreldraw.com"
+      }
+    ]
+  },
+  {
+    "code": "STK",
+    "name": "Stock média",
+    "tools": [
+      {
+        "name": "Envato",
+        "desc": "Tržiště šablon, stock fotek, videí, hudby a WordPress motivů.",
+        "longdesc": "Envato je tržiště šablon, stock fotek, videí, hudby a WordPress motivů. Jedno předplatné zpřístupní miliony assetů. Pro designéry, vývojáře a tvůrce.",
+        "url": "https://envato.com"
+      },
+      {
+        "name": "Shutterstock",
+        "desc": "Obrovská knihovna stock fotek, vektorů, videí a hudby.",
+        "longdesc": "Shutterstock je obrovská knihovna stock fotek, vektorů, videí a hudby. Nabízí kvalitní licencovaný obsah. Pro marketéry a tvůrce, kteří potřebují profesionální média.",
+        "url": "https://www.shutterstock.com"
+      },
+      {
+        "name": "Depositphotos",
+        "desc": "Stock fotografie, vektory a videa za výhodné ceny.",
+        "longdesc": "Depositphotos nabízí stock fotografie, vektory a videa za výhodné ceny. Velká knihovna s flexibilním předplatným. Pro menší projekty a firmy.",
+        "url": "https://depositphotos.com"
+      },
+      {
+        "name": "Creative Market",
+        "desc": "Tržiště designu — fonty, šablony, grafika a assety od tvůrců.",
+        "longdesc": "Creative Market je tržiště designu — fonty, šablony, grafika a assety od nezávislých tvůrců. Koupíte jednotlivé položky bez předplatného. Pro designéry.",
+        "url": "https://creativemarket.com"
+      },
+      {
+        "name": "Motion Array",
+        "desc": "Šablony pro video, hudba a efekty pro střihače.",
+        "longdesc": "Motion Array je knihovna šablon pro video, hudby a efektů pro střihače. Jedno předplatné pokrývá celou postprodukci. Pro video editory.",
+        "url": "https://motionarray.com"
+      }
+    ]
+  },
+  {
+    "code": "EDT",
+    "name": "Video editory",
+    "tools": [
+      {
+        "name": "Filmora",
+        "desc": "Video editor s efekty a AI nástroji pro začátečníky i pokročilé.",
+        "longdesc": "Filmora je video editor s efekty a AI nástroji pro začátečníky i pokročilé. Nabízí šablony, přechody a jednoduché ovládání. Pro tvůrce na YouTube a sociální sítě.",
+        "url": "https://filmora.wondershare.com"
+      },
+      {
+        "name": "Movavi",
+        "desc": "Snadný editor videa a převaděč formátů pro Windows a Mac.",
+        "longdesc": "Movavi je snadný editor videa a převaděč formátů pro Windows a Mac. Rychle sestříháte video a přidáte efekty. Pro běžné uživatele.",
+        "url": "https://www.movavi.com"
+      },
+      {
+        "name": "CapCut",
+        "desc": "Oblíbený editor videa pro mobil i desktop, zdarma.",
+        "longdesc": "CapCut je oblíbený editor videa pro mobil i desktop, zdarma. Nabízí trendy efekty, titulky a hudbu. Ideální pro tvůrce na TikTok a Instagram.",
+        "url": "https://www.capcut.com"
+      }
+    ]
+  },
+  {
+    "code": "HST",
+    "name": "Hosting",
+    "tools": [
+      {
+        "name": "Hostinger",
+        "desc": "Cenově dostupný webhosting s rychlými servery a AI podporou.",
+        "longdesc": "Hostinger je cenově dostupný webhosting s rychlými servery a AI podporou. Nabízí sdílený hosting, VPS i domény. Pro začátečníky i menší weby.",
+        "url": "https://www.hostinger.com"
+      },
+      {
+        "name": "SiteGround",
+        "desc": "Spolehlivý hosting s vynikající podporou, ideální pro WordPress.",
+        "longdesc": "SiteGround je spolehlivý hosting s vynikající podporou, ideální pro WordPress. Nabízí rychlost, bezpečnost a denní zálohy. Pro weby, na kterých záleží.",
+        "url": "https://www.siteground.com"
+      },
+      {
+        "name": "Bluehost",
+        "desc": "Hosting doporučený WordPressem, dobrý pro začátečníky.",
+        "longdesc": "Bluehost je hosting doporučený WordPressem, dobrý pro začátečníky. Nabízí jednoduchou instalaci WordPressu a doménu zdarma. Pro první weby a blogy.",
+        "url": "https://www.bluehost.com"
+      },
+      {
+        "name": "Kinsta",
+        "desc": "Prémiový spravovaný WordPress hosting na Google Cloud.",
+        "longdesc": "Kinsta je prémiový spravovaný WordPress hosting na Google Cloud. Nabízí špičkovou rychlost, zabezpečení a správu. Pro firmy a náročné weby.",
+        "url": "https://kinsta.com"
+      },
+      {
+        "name": "WP Engine",
+        "desc": "Managed WordPress hosting pro firmy a náročné weby.",
+        "longdesc": "WP Engine je managed WordPress hosting pro firmy a náročné weby. Nabízí automatické zálohy, staging a bezpečnost. Pro weby, které nesmí spadnout.",
+        "url": "https://wpengine.com"
+      },
+      {
+        "name": "Cloudways",
+        "desc": "Spravovaný cloud hosting (DigitalOcean, AWS, Google Cloud) s jednoduchým ovládáním.",
+        "longdesc": "Cloudways je spravovaný cloud hosting na DigitalOcean, AWS nebo Google Cloud. Nabízí výkon cloudu s jednoduchým ovládáním. Pro vývojáře a rostoucí projekty.",
+        "url": "https://www.cloudways.com"
+      }
+    ]
+  },
+  {
+    "code": "WEB",
+    "name": "Tvorba webů",
+    "tools": [
+      {
+        "name": "Wix",
+        "desc": "Tvůrce webů drag-and-drop pro weby a e-shopy bez kódu.",
+        "longdesc": "Wix je tvůrce webů drag-and-drop pro weby a e-shopy bez kódu. Nabízí stovky šablon a AI návrháře. Pro každého, kdo chce rychle web.",
+        "url": "https://www.wix.com"
+      },
+      {
+        "name": "Squarespace",
+        "desc": "Elegantní šablony pro weby, portfolia a e-shopy.",
+        "longdesc": "Squarespace nabízí elegantní šablony pro weby, portfolia a e-shopy. Designově výjimečný a jednoduchý. Pro kreativce a malé firmy.",
+        "url": "https://www.squarespace.com"
+      },
+      {
+        "name": "Webflow",
+        "desc": "No-code platforma pro profesionální a responzivní weby.",
+        "longdesc": "Webflow je no-code platforma pro profesionální a responzivní weby. Nabízí plnou kontrolu nad designem bez kódu. Pro designéry a agentury.",
+        "url": "https://webflow.com"
+      },
+      {
+        "name": "Elementor",
+        "desc": "Nejoblíbenější vizuální builder pro WordPress.",
+        "longdesc": "Elementor je nejoblíbenější vizuální builder pro WordPress. Weby stavíte přetahováním prvků bez kódu. Pro majitele WordPress webů.",
+        "url": "https://elementor.com"
+      },
+      {
+        "name": "Divi",
+        "desc": "WordPress téma s vizuálním builderem pro weby bez kódu.",
+        "longdesc": "Divi je WordPress téma s vizuálním builderem pro weby bez kódu. Nabízí stovky layoutů a plnou editaci. Pro WordPress uživatele.",
+        "url": "https://www.elegantthemes.com"
+      },
+      {
+        "name": "Framer",
+        "desc": "Moderní nástroj pro interaktivní weby s animacemi.",
+        "longdesc": "Framer je moderní nástroj pro interaktivní weby s animacemi. Weby vytvoříte vizuálně s profesionálním výsledkem. Pro designéry a startupy.",
+        "url": "https://www.framer.com"
+      }
+    ]
+  },
+  {
+    "code": "E-C",
+    "name": "E-commerce",
+    "tools": [
+      {
+        "name": "Shopify",
+        "desc": "Nejrozšířenější platforma pro založení a provoz e-shopu.",
+        "longdesc": "Shopify je nejrozšířenější platforma pro založení a provoz e-shopu. Pokryje produkty, platby, dopravu i marketing. Pro firmy všech velikostí.",
+        "url": "https://www.shopify.com"
+      },
+      {
+        "name": "BigCommerce",
+        "desc": "E-commerce platforma pro větší a rychle rostoucí obchody.",
+        "longdesc": "BigCommerce je e-commerce platforma pro větší a rychle rostoucí obchody. Nabízí škálovatelnost a pokročilé funkce. Pro ambiciózní e-shopy.",
+        "url": "https://www.bigcommerce.com"
+      },
+      {
+        "name": "ThriveCart",
+        "desc": "Platforma pro prodejní stránky, checkout a upselling.",
+        "longdesc": "ThriveCart je platforma pro prodejní stránky, checkout a upselling. Zvyšuje konverze a průměrnou hodnotu objednávky. Pro prodejce digitálních produktů.",
+        "url": "https://thrivecart.com"
+      },
+      {
+        "name": "SamCart",
+        "desc": "Nástroj pro tvorbu prodejních stránek a optimalizaci konverzí.",
+        "longdesc": "SamCart je nástroj pro tvorbu prodejních stránek a optimalizaci konverzí. Jednoduché stránky s high-converting prvky. Pro online prodejce.",
+        "url": "https://www.samcart.com"
+      },
+      {
+        "name": "Gumroad",
+        "desc": "Jednoduchý prodej digitálních produktů, kurzů a členství.",
+        "longdesc": "Gumroad je jednoduchý prodej digitálních produktů, kurzů a členství. Nahrajete a prodáváte během minut. Pro tvůrce a autory.",
+        "url": "https://gumroad.com"
+      }
+    ]
+  },
+  {
+    "code": "MKT",
+    "name": "SEO & Marketing",
+    "tools": [
+      {
+        "name": "SEMrush",
+        "desc": "Kompletní SEO a marketingová sada — klíčová slova, konkurence, PPC.",
+        "longdesc": "SEMrush je kompletní SEO a marketingová sada. Analyzuje klíčová slova, konkurenci, PPC i obsah. Standard pro profesionální marketéry.",
+        "url": "https://www.semrush.com"
+      },
+      {
+        "name": "SE Ranking",
+        "desc": "SEO platforma pro sledování pozic, audity webu a klíčová slova.",
+        "longdesc": "SE Ranking je SEO platforma pro sledování pozic, audity webu a klíčová slova. Nabízí přehledné reporty a automatizaci. Pro SEO specialisty a agentury.",
+        "url": "https://seranking.com"
+      },
+      {
+        "name": "Mangools",
+        "desc": "Sada SEO nástrojů (KWFinder, SERPChecker) pro výzkum klíčových slov.",
+        "longdesc": "Mangools je sada SEO nástrojů (KWFinder, SERPChecker) pro výzkum klíčových slov. Jednoduchá a srozumitelná. Pro začínající SEO.",
+        "url": "https://mangools.com"
+      },
+      {
+        "name": "RankMath",
+        "desc": "SEO plugin pro WordPress, který pomáhá optimalizovat články.",
+        "longdesc": "RankMath je SEO plugin pro WordPress, který pomáhá optimalizovat články. Navádí krok za krokem při optimalizaci. Pro majitele WordPress webů.",
+        "url": "https://rankmath.com"
+      }
+    ]
+  },
+  {
+    "code": "VPN",
+    "name": "VPN & Zabezpečení",
+    "tools": [
+      {
+        "name": "NordVPN",
+        "desc": "Nejpopulárnější VPN pro bezpečné a anonymní prohlížení internetu.",
+        "longdesc": "NordVPN je nejpopulárnější VPN pro bezpečné a anonymní prohlížení. Šifruje spojení a skrývá vaši IP. Pro ochranu soukromí na internetu.",
+        "url": "https://nordvpn.com"
+      },
+      {
+        "name": "Surfshark",
+        "desc": "VPN s neomezeným počtem zařízení a extra bezpečnostními funkcemi.",
+        "longdesc": "Surfshark je VPN s neomezeným počtem zařízení a extra bezpečnostními funkcemi. Ochrání celou rodinu najednou. Pro soukromí za dobrou cenu.",
+        "url": "https://surfshark.com"
+      },
+      {
+        "name": "ExpressVPN",
+        "desc": "Prémiová VPN známá rychlostí a spolehlivostí.",
+        "longdesc": "ExpressVPN je prémiová VPN známá rychlostí a spolehlivostí. Nabízí servery v mnoha zemích a silné šifrování. Pro náročné uživatele.",
+        "url": "https://www.expressvpn.com"
+      },
+      {
+        "name": "ProtonVPN",
+        "desc": "VPN od Protonu s důrazem na soukromí a open-source.",
+        "longdesc": "ProtonVPN je VPN od Protonu s důrazem na soukromí a open-source. Vyvíjí ji tým stojící za ProtonMailem. Pro ty, kterým záleží na soukromí.",
+        "url": "https://protonvpn.com"
+      }
+    ]
+  },
+  {
+    "code": "EDU",
+    "name": "Kurzy & LMS",
+    "tools": [
+      {
+        "name": "Teachable",
+        "desc": "Platforma pro tvorbu a prodej vlastních online kurzů.",
+        "longdesc": "Teachable je platforma pro tvorbu a prodej vlastních online kurzů. Vytvoříte kurz, prodáváte a přijímáte platby. Pro lektory a tvůrce kurzů.",
+        "url": "https://teachable.com"
+      },
+      {
+        "name": "Thinkific",
+        "desc": "Nástroj pro tvorbu kurzů, členství a komunit.",
+        "longdesc": "Thinkific je nástroj pro tvorbu kurzů, členství a komunit. Bez kódu postavíte vlastní výukový web. Pro edtech a tvůrce.",
+        "url": "https://www.thinkific.com"
+      },
+      {
+        "name": "Kajabi",
+        "desc": "All-in-one pro tvůrce — kurzy, e-mail marketing, weby a prodej.",
+        "longdesc": "Kajabi je all-in-one pro tvůrce — kurzy, e-mail marketing, weby a prodej. Vše na jednom místě. Pro profesionální online byznys.",
+        "url": "https://kajabi.com"
+      },
+      {
+        "name": "Podia",
+        "desc": "Jednoduchá platforma pro kurzy, digitální produkty a členství.",
+        "longdesc": "Podia je jednoduchá platforma pro kurzy, digitální produkty a členství. Bez technických starostí. Pro tvůrce a menší byznys.",
+        "url": "https://www.podia.com"
+      },
+      {
+        "name": "Domestika",
+        "desc": "Kreativní online kurzy od profesionálů — design, foto, ilustrace.",
+        "longdesc": "Domestika nabízí kreativní online kurzy od profesionálů — design, foto, ilustrace. Kurzy v češtině i dalších jazycích. Pro kreativce.",
+        "url": "https://www.domestika.org"
+      }
+    ]
+  }
+];
+
+const INTRO = { type: "intro" };
+const OUTRO = { type: "outro" };
+const DATA = [INTRO, ...CATEGORIES, OUTRO];
