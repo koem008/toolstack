@@ -15,7 +15,7 @@ import unicodedata
 from urllib.parse import urlparse
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-SITE_URL = "https://tvujweb.cz"  # TODO: nahraď svou skutečnou doménou
+SITE_URL = "https://vermillion-frangollo-d4eb7f.netlify.app"  # TODO: nahraď svou skutečnou doménou
 
 d = json.load(open(os.path.join(BASE, "content", "data.json"), encoding="utf-8"))
 site = d["site"]

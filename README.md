@@ -41,7 +41,7 @@ Obsah je v **`content/data.json`**. Dvě možnosti:
 
 ## Před nasazením (jednou)
 
-1. **Doména:** nahraď `https://tvujweb.cz` svou doménou — v `index.html`, info stránkách, `robots.txt` a v `gen_seo.py` (proměnná `SITE_URL`).
+1. **Doména:** nahraď `https://vermillion-frangollo-d4eb7f.netlify.app` svou doménou — v `index.html`, info stránkách, `robots.txt` a v `gen_seo.py` (proměnná `SITE_URL`).
 2. **Měření:** do `config.js` vyplň `GA_MEASUREMENT_ID` (Google Analytics 4, např. `G-ABC123`) a `GSC_VERIFICATION` (token z Google Search Console). Prázdné hodnoty = funkce vypnutá.
 3. **Kontakt:** doplň reálný e-mail v `kontakt.html` a identifikaci provozovatele v `podminky.html` / `soukromi.html`.
 
